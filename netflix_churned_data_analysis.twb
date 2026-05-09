@@ -1,0 +1,834 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='netflix_customer_churn' inline='true' name='federated.060wry51c447ba0zvmdjm00nob8h' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='netflix_customer_churn' name='textscan.0vdrns4036526q1aw9f2t0itg4a3'>
+            <connection class='textscan' directory='C:/Users/adhit/OneDrive/Documents/anaconda_projects' filename='netflix_customer_churn.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0vdrns4036526q1aw9f2t0itg4a3' name='netflix_customer_churn.csv' table='[netflix_customer_churn#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='customer_id' ordinal='0' />
+            <column datatype='integer' name='age' ordinal='1' />
+            <column datatype='string' name='gender' ordinal='2' />
+            <column datatype='string' name='subscription_type' ordinal='3' />
+            <column datatype='real' name='watch_hours' ordinal='4' />
+            <column datatype='integer' name='last_login_days' ordinal='5' />
+            <column datatype='string' name='region' ordinal='6' />
+            <column datatype='string' name='device' ordinal='7' />
+            <column datatype='real' name='monthly_fee' ordinal='8' />
+            <column datatype='integer' name='churned' ordinal='9' />
+            <column datatype='string' name='payment_method' ordinal='10' />
+            <column datatype='integer' name='number_of_profiles' ordinal='11' />
+            <column datatype='real' name='avg_watch_time_per_day' ordinal='12' />
+            <column datatype='string' name='favorite_genre' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subscription_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[subscription_type]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>subscription_type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>watch_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[watch_hours]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>watch_hours</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_login_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[last_login_days]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>last_login_days</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>device</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[device]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>device</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>monthly_fee</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[monthly_fee]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>monthly_fee</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>churned</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[churned]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>churned</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment_method]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>payment_method</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_profiles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_profiles]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>number_of_profiles</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_watch_time_per_day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_watch_time_per_day]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>avg_watch_time_per_day</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>favorite_genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[favorite_genre]</local-name>
+            <parent-name>[netflix_customer_churn.csv]</parent-name>
+            <remote-alias>favorite_genre</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Churned (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[churned]' peg='0' size='0.303' />
+      </column>
+      <column caption='netflix_customer_churn.csv' datatype='table' name='[__tableau_internal_object_id__].[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Avg Watch Time Per Day' datatype='real' name='[avg_watch_time_per_day]' role='dimension' type='quantitative' />
+      <column caption='Churned' datatype='integer' name='[churned]' role='measure' type='quantitative' />
+      <column caption='Customer Id' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+      <column caption='Device' datatype='string' name='[device]' role='dimension' type='nominal' />
+      <column caption='Favorite Genre' datatype='string' name='[favorite_genre]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Last Login Days' datatype='integer' name='[last_login_days]' role='measure' type='quantitative' />
+      <column caption='Monthly Fee' datatype='real' name='[monthly_fee]' role='measure' type='quantitative' />
+      <column caption='Number Of Profiles' datatype='integer' name='[number_of_profiles]' role='measure' type='quantitative' />
+      <column caption='Payment Method' datatype='string' name='[payment_method]' role='dimension' type='nominal' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Subscription Type' datatype='string' name='[subscription_type]' role='dimension' type='nominal' />
+      <column caption='Watch Hours' datatype='real' name='[watch_hours]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/adhit/AppData/Local/Temp/TableauTemp/#TableauTemp_0dyz5jh1erim8115qicxz02y04ym.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/08/2026 07:02:31 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customer_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>1</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>2</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subscription_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subscription_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subscription_type</remote-alias>
+              <ordinal>3</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>watch_hours</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[watch_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>watch_hours</remote-alias>
+              <ordinal>4</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1795</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_login_days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[last_login_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_login_days</remote-alias>
+              <ordinal>5</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>region</remote-alias>
+              <ordinal>6</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>device</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[device]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>device</remote-alias>
+              <ordinal>7</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>monthly_fee</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[monthly_fee]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>monthly_fee</remote-alias>
+              <ordinal>8</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>churned</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[churned]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>churned</remote-alias>
+              <ordinal>9</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payment_method</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payment_method]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payment_method</remote-alias>
+              <ordinal>10</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_profiles</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_of_profiles]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_profiles</remote-alias>
+              <ordinal>11</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_watch_time_per_day</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_watch_time_per_day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_watch_time_per_day</remote-alias>
+              <ordinal>12</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>370</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>favorite_genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[favorite_genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>favorite_genre</remote-alias>
+              <ordinal>13</ordinal>
+              <family>netflix_customer_churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='netflix_customer_churn.csv' id='netflix_customer_churn.csv_EA981F4B48CB41D098FC0506C94A46E1'>
+            <properties context=''>
+              <relation connection='textscan.0vdrns4036526q1aw9f2t0itg4a3' name='netflix_customer_churn.csv' table='[netflix_customer_churn#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='customer_id' ordinal='0' />
+                  <column datatype='integer' name='age' ordinal='1' />
+                  <column datatype='string' name='gender' ordinal='2' />
+                  <column datatype='string' name='subscription_type' ordinal='3' />
+                  <column datatype='real' name='watch_hours' ordinal='4' />
+                  <column datatype='integer' name='last_login_days' ordinal='5' />
+                  <column datatype='string' name='region' ordinal='6' />
+                  <column datatype='string' name='device' ordinal='7' />
+                  <column datatype='real' name='monthly_fee' ordinal='8' />
+                  <column datatype='integer' name='churned' ordinal='9' />
+                  <column datatype='string' name='payment_method' ordinal='10' />
+                  <column datatype='integer' name='number_of_profiles' ordinal='11' />
+                  <column datatype='real' name='avg_watch_time_per_day' ordinal='12' />
+                  <column datatype='string' name='favorite_genre' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{03A3D97A-83A9-4D01-B78E-0A183B9066E6}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' italic='true'>Churned_customer Region &amp; Subscription Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_customer_churn' name='federated.060wry51c447ba0zvmdjm00nob8h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.060wry51c447ba0zvmdjm00nob8h'>
+            <column caption='Churned' datatype='integer' name='[churned]' role='measure' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subscription_type]' derivation='None' name='[none:subscription_type:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Subscription Type' datatype='string' name='[subscription_type]' role='dimension' type='nominal' />
+            <column-instance column='[churned]' derivation='Sum' name='[sum:churned:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.060wry51c447ba0zvmdjm00nob8h].[none:subscription_type:nk]' value='70' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.060wry51c447ba0zvmdjm00nob8h].[sum:churned:qk]' palette='green_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.060wry51c447ba0zvmdjm00nob8h].[sum:churned:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.060wry51c447ba0zvmdjm00nob8h].[sum:churned:qk]</rows>
+        <cols>([federated.060wry51c447ba0zvmdjm00nob8h].[none:region:nk] / [federated.060wry51c447ba0zvmdjm00nob8h].[none:subscription_type:nk])</cols>
+        <show-full-range>
+          <column>[federated.060wry51c447ba0zvmdjm00nob8h].[Churned (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{67C1A80C-009B-4F57-A720-86B541930C24}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5B1336F6-1BDF-4723-8AAB-735EB614ECEC}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FE35FDDB-8C9A-4AA4-B5B7-F659922F7F10}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.060wry51c447ba0zvmdjm00nob8h].[none:region:nk]</field>
+            <field>[federated.060wry51c447ba0zvmdjm00nob8h].[none:subscription_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FDE8A0F6-9B87-4D6C-88C2-6EBD28262F42}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{039AC752-0FEB-4575-A1F9-A7A393A09C67}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
